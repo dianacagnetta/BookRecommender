@@ -1,7 +1,0 @@
-it.bookrecommender
-it.bookrecommender.dao.interfaces
-it.bookrecommender.dao.jdbc
-it.bookrecommender.db
-it.bookrecommender.dto
-it.bookrecommender.model
-it.bookrecommender.net.server
