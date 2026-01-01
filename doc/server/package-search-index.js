@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"it.bookrecommender"},{"l":"it.bookrecommender.dao.interfaces"},{"l":"it.bookrecommender.dao.jdbc"},{"l":"it.bookrecommender.db"},{"l":"it.bookrecommender.dto"},{"l":"it.bookrecommender.model"},{"l":"it.bookrecommender.net.server"}];updateSearchResults();
