@@ -1,0 +1,73 @@
+@options
+@argfile
+--class-path
+'C:/Users/hp/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-controls/21.0.1/javafx-controls-21.0.1.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-graphics/21.0.1/javafx-graphics-21.0.1.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-fxml/21.0.1/javafx-fxml-21.0.1.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-base/21.0.1/javafx-base-21.0.1.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-controls/21.0.1/javafx-controls-21.0.1-win.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-fxml/21.0.1/javafx-fxml-21.0.1-win.jar'
+--module-path
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/bin/clientBR.jar;C:/Users/hp/.m2/repository/org/openjfx/javafx-base/21.0.1/javafx-base-21.0.1-win.jar'
+--patch-module
+javafx.graphics='C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java;C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/bin/target_client/generated-sources/annotations'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+--module-source-path
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/doc/client/./src'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/doc/client/.'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'Client BookRecommender'
+-use
+-version
+-windowtitle
+'BookRecommender - Client 1.0 API'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/AggiungiValutazioneController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/CatalogoController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/ClientMain.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/ConsigliController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/HomeController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Launcher.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Libreria.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/LibreriaDettaglioController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/LibrerieController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Libro.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/LibroConsigliato.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/LoginController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/NetworkClient.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/RegisterController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Request.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Response.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/RicercaController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/SelettoreLibroController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/SelezionaLibreriaController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Session.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Utente.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/Valutazione.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/ValutazioneFormController.java'
+'C:/Users/hp/Downloads/Telegram Desktop/BookRecommenderCommenti/BookRecommenderCommenti/BookRecommender (3)/BookRecommender/clientBR/src/main/java/it/bookrecommender/VisualizzaLibroController.java'
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\allclasses-index.html = 1765979228916
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\allpackages-index.html = 1765979228920
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\copy.svg = 1765979229020
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\element-list = 1765979228664
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\help-doc.html = 1765979229008
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\index-all.html = 1765979228991
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\index.html = 1765979229001
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\member-search-index.js = 1765979228930
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\module-search-index.js = 1765979228923
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\overview-tree.html = 1765979228881
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\package-search-index.js = 1765979228925
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\script.js = 1765979229016
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\search-page.js = 1765979229028
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\search.html = 1765979228996
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\search.js = 1765979229024
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\stylesheet.css = 1765979229013
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\tag-search-index.js = 1765979228931
+C:\Users\hp\Downloads\Telegram Desktop\BookRecommenderCommenti\BookRecommenderCommenti\BookRecommender (3)\BookRecommender\doc\client\type-search-index.js = 1765979228927

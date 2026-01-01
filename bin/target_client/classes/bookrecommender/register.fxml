@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-padding: 30;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.bookrecommender.RegisterController">
+
+    <Label text="Registrazione Utente" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="nomeField" promptText="Nome" />
+    <TextField fx:id="cognomeField" promptText="Cognome" />
+    <TextField fx:id="cfField" promptText="Codice Fiscale" />
+    <TextField fx:id="emailField" promptText="Email" />
+    <TextField fx:id="useridField" promptText="User ID" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+
+    <Button text="Conferma Registrazione" onAction="#registerAction" />
+    <Button text="Torna al Login" onAction="#goToLogin" />
+
+</VBox>
