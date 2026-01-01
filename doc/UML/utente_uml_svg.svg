@@ -1,0 +1,240 @@
+<svg viewBox="0 0 1400 1800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .class-box { fill: #f9f9f9; stroke: #333; stroke-width: 2; }
+      .interface-box { fill: #e8f4f8; stroke: #333; stroke-width: 2; }
+      .class-title { fill: #333; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .class-content { fill: #333; font-family: Arial, sans-serif; font-size: 11px; }
+      .relation { stroke: #666; stroke-width: 1.5; fill: none; }
+      .relation-dashed { stroke: #666; stroke-width: 1.5; fill: none; stroke-dasharray: 5,5; }
+      .relation-label { fill: #555; font-family: Arial, sans-serif; font-size: 10px; font-style: italic; }
+      .arrow { fill: #666; }
+      .arrow-white { fill: white; stroke: #666; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Utente (centro) -->
+  <g id="Utente">
+    <rect x="600" y="400" width="200" height="280" class="class-box"/>
+    <text x="700" y="420" text-anchor="middle" class="class-title">Utente</text>
+    <line x1="600" y1="430" x2="800" y2="430" stroke="#333" stroke-width="1"/>
+    <text x="610" y="448" class="class-content">- id: int</text>
+    <text x="610" y="463" class="class-content">- nome: String</text>
+    <text x="610" y="478" class="class-content">- cognome: String</text>
+    <text x="610" y="493" class="class-content">- codiceFiscale: String</text>
+    <text x="610" y="508" class="class-content">- email: String</text>
+    <text x="610" y="523" class="class-content">- userid: String</text>
+    <text x="610" y="538" class="class-content">- passwordHash: String</text>
+    <line x1="600" y1="548" x2="800" y2="548" stroke="#333" stroke-width="1"/>
+    <text x="610" y="566" class="class-content">+ getId(): int</text>
+    <text x="610" y="581" class="class-content">+ getNome(): String</text>
+    <text x="610" y="596" class="class-content">+ getCognome(): String</text>
+    <text x="610" y="611" class="class-content">+ getCodiceFiscale(): String</text>
+    <text x="610" y="626" class="class-content">+ getEmail(): String</text>
+    <text x="610" y="641" class="class-content">+ getUserid(): String</text>
+    <text x="610" y="656" class="class-content">+ getPasswordHash(): String</text>
+  </g>
+
+  <!-- IUtenteDAO -->
+  <g id="IUtenteDAO">
+    <rect x="50" y="100" width="230" height="180" class="interface-box"/>
+    <text x="165" y="120" text-anchor="middle" class="class-content" font-style="italic">&lt;&lt;interface&gt;&gt;</text>
+    <text x="165" y="138" text-anchor="middle" class="class-title">IUtenteDAO</text>
+    <line x1="50" y1="148" x2="280" y2="148" stroke="#333" stroke-width="1"/>
+    <text x="60" y="166" class="class-content">+ login(...): Utente</text>
+    <text x="60" y="181" class="class-content">+ registra(...): boolean</text>
+    <text x="60" y="196" class="class-content">+ searchBooks(...): List</text>
+    <text x="60" y="211" class="class-content">+ getBooks(): List</text>
+    <text x="60" y="226" class="class-content">+ getValutazioniLibro(...): List</text>
+    <text x="60" y="241" class="class-content">+ getConsigli(...): List</text>
+    <text x="60" y="256" class="class-content">+ aggiungiValutazione(...): void</text>
+    <text x="60" y="271" class="class-content">+ getLibrerieUtente(...): List</text>
+  </g>
+
+  <!-- UtenteDAOImpl -->
+  <g id="UtenteDAOImpl">
+    <rect x="50" y="350" width="230" height="180" class="class-box"/>
+    <text x="165" y="370" text-anchor="middle" class="class-title">UtenteDAOImpl</text>
+    <line x1="50" y1="380" x2="280" y2="380" stroke="#333" stroke-width="1"/>
+    <text x="60" y="398" class="class-content">+ login(...): Utente</text>
+    <text x="60" y="413" class="class-content">+ registra(...): boolean</text>
+    <text x="60" y="428" class="class-content">+ searchBooks(...): List</text>
+    <text x="60" y="443" class="class-content">+ getBooks(): List</text>
+    <text x="60" y="458" class="class-content">+ getValutazioniLibro(...): List</text>
+    <text x="60" y="473" class="class-content">+ getConsigli(...): List</text>
+    <text x="60" y="488" class="class-content">+ aggiungiValutazione(...): void</text>
+    <text x="60" y="503" class="class-content">+ getLibrerieUtente(...): List</text>
+  </g>
+
+  <!-- Session -->
+  <g id="Session">
+    <rect x="350" y="150" width="180" height="100" class="class-box"/>
+    <text x="440" y="170" text-anchor="middle" class="class-title">Session</text>
+    <line x1="350" y1="180" x2="530" y2="180" stroke="#333" stroke-width="1"/>
+    <text x="360" y="198" class="class-content">+ utenteLoggato: Utente</text>
+    <line x1="350" y1="208" x2="530" y2="208" stroke="#333" stroke-width="1"/>
+    <text x="360" y="226" class="class-content">+ isLogged(): boolean</text>
+    <text x="360" y="241" class="class-content">+ login(Utente): void</text>
+  </g>
+
+  <!-- LoginController -->
+  <g id="LoginController">
+    <rect x="870" y="150" width="200" height="120" class="class-box"/>
+    <text x="970" y="170" text-anchor="middle" class="class-title">LoginController</text>
+    <line x1="870" y1="180" x2="1070" y2="180" stroke="#333" stroke-width="1"/>
+    <text x="880" y="198" class="class-content">- useridField: TextField</text>
+    <text x="880" y="213" class="class-content">- passwordField: PasswordField</text>
+    <line x1="870" y1="223" x2="1070" y2="223" stroke="#333" stroke-width="1"/>
+    <text x="880" y="241" class="class-content">+ loginAction(): void</text>
+    <text x="880" y="256" class="class-content">+ enterAsGuest(): void</text>
+  </g>
+
+  <!-- RegisterController -->
+  <g id="RegisterController">
+    <rect x="870" y="320" width="200" height="140" class="class-box"/>
+    <text x="970" y="340" text-anchor="middle" class="class-title">RegisterController</text>
+    <line x1="870" y1="350" x2="1070" y2="350" stroke="#333" stroke-width="1"/>
+    <text x="880" y="368" class="class-content">- nomeField: TextField</text>
+    <text x="880" y="383" class="class-content">- cognomeField: TextField</text>
+    <text x="880" y="398" class="class-content">- useridField: TextField</text>
+    <text x="880" y="413" class="class-content">- passwordField: PasswordField</text>
+    <line x1="870" y1="423" x2="1070" y2="423" stroke="#333" stroke-width="1"/>
+    <text x="880" y="441" class="class-content">+ registerAction(): void</text>
+  </g>
+
+  <!-- HomeController -->
+  <g id="HomeController">
+    <rect x="870" y="510" width="200" height="120" class="class-box"/>
+    <text x="970" y="530" text-anchor="middle" class="class-title">HomeController</text>
+    <line x1="870" y1="540" x2="1070" y2="540" stroke="#333" stroke-width="1"/>
+    <text x="880" y="558" class="class-content">- utente: Utente</text>
+    <text x="880" y="573" class="class-content">- guest: boolean</text>
+    <line x1="870" y1="583" x2="1070" y2="583" stroke="#333" stroke-width="1"/>
+    <text x="880" y="601" class="class-content">+ setUtente(Utente): void</text>
+    <text x="880" y="616" class="class-content">+ openCatalogo(): void</text>
+  </g>
+
+  <!-- Request -->
+  <g id="Request">
+    <rect x="350" y="800" width="180" height="140" class="class-box"/>
+    <text x="440" y="820" text-anchor="middle" class="class-title">Request</text>
+    <line x1="350" y1="830" x2="530" y2="830" stroke="#333" stroke-width="1"/>
+    <text x="360" y="848" class="class-content">+ action: String</text>
+    <text x="360" y="863" class="class-content">+ userid: String</text>
+    <text x="360" y="878" class="class-content">+ passwordHash: String</text>
+    <text x="360" y="893" class="class-content">+ nome: String</text>
+    <text x="360" y="908" class="class-content">+ cognome: String</text>
+    <text x="360" y="923" class="class-content">+ utenteId: int</text>
+  </g>
+
+  <!-- Response -->
+  <g id="Response">
+    <rect x="600" y="800" width="180" height="140" class="class-box"/>
+    <text x="690" y="820" text-anchor="middle" class="class-title">Response</text>
+    <line x1="600" y1="830" x2="780" y2="830" stroke="#333" stroke-width="1"/>
+    <text x="610" y="848" class="class-content">+ ok: boolean</text>
+    <text x="610" y="863" class="class-content">+ message: String</text>
+    <text x="610" y="878" class="class-content">+ utente: Utente</text>
+    <text x="610" y="893" class="class-content">+ libri: List</text>
+    <text x="610" y="908" class="class-content">+ libro: Libro</text>
+    <text x="610" y="923" class="class-content">+ librerie: List</text>
+  </g>
+
+  <!-- NetworkClient -->
+  <g id="NetworkClient">
+    <rect x="870" y="800" width="200" height="140" class="class-box"/>
+    <text x="970" y="820" text-anchor="middle" class="class-title">NetworkClient</text>
+    <line x1="870" y1="830" x2="1070" y2="830" stroke="#333" stroke-width="1"/>
+    <text x="880" y="848" class="class-content">- instance: NetworkClient</text>
+    <text x="880" y="863" class="class-content">- socket: Socket</text>
+    <text x="880" y="878" class="class-content">- in: BufferedReader</text>
+    <text x="880" y="893" class="class-content">- out: PrintWriter</text>
+    <line x1="870" y1="903" x2="1070" y2="903" stroke="#333" stroke-width="1"/>
+    <text x="880" y="921" class="class-content">+ getInstance(): NetworkClient</text>
+  </g>
+
+  <!-- ClientHandler -->
+  <g id="ClientHandler">
+    <rect x="50" y="650" width="200" height="120" class="class-box"/>
+    <text x="150" y="670" text-anchor="middle" class="class-title">ClientHandler</text>
+    <line x1="50" y1="680" x2="250" y2="680" stroke="#333" stroke-width="1"/>
+    <text x="60" y="698" class="class-content">- socket: Socket</text>
+    <text x="60" y="713" class="class-content">- utenteDao: IUtenteDAO</text>
+    <line x1="50" y1="723" x2="250" y2="723" stroke="#333" stroke-width="1"/>
+    <text x="60" y="741" class="class-content">+ run(): void</text>
+    <text x="60" y="756" class="class-content">+ ClientHandler(Socket)</text>
+  </g>
+
+  <!-- RELAZIONI -->
+  
+  <!-- UtenteDAOImpl implementa IUtenteDAO -->
+  <path class="relation-dashed" d="M 165 350 L 165 280"/>
+  <polygon class="arrow-white" points="165,280 160,290 170,290"/>
+  <text x="175" y="315" class="relation-label">implementa</text>
+
+  <!-- IUtenteDAO usa Utente -->
+  <path class="relation-dashed" d="M 280 190 L 600 400"/>
+  <polygon class="arrow" points="600,400 592,393 595,403"/>
+  <text x="420" y="285" class="relation-label">restituisce/usa</text>
+
+  <!-- UtenteDAOImpl crea Utente -->
+  <path class="relation-dashed" d="M 280 440 L 600 540"/>
+  <polygon class="arrow" points="600,540 592,533 595,543"/>
+  <text x="420" y="480" class="relation-label">crea/restituisce</text>
+
+  <!-- Session memorizza Utente -->
+  <path class="relation" d="M 530 200 L 600 400"/>
+  <polygon class="arrow" points="600,400 594,391 598,401"/>
+  <text x="540" y="290" class="relation-label">memorizza</text>
+
+  <!-- LoginController usa NetworkClient -->
+  <path class="relation-dashed" d="M 970 270 L 970 800"/>
+  <polygon class="arrow" points="970,800 965,790 975,790"/>
+  <text x="980" y="530" class="relation-label">usa</text>
+
+  <!-- LoginController riceve Utente -->
+  <path class="relation-dashed" d="M 870 210 L 800 400"/>
+  <polygon class="arrow" points="800,400 807,391 795,394"/>
+  <text x="820" y="300" class="relation-label">riceve</text>
+
+  <!-- RegisterController crea Utente -->
+  <path class="relation-dashed" d="M 870 390 L 800 450"/>
+  <polygon class="arrow" points="800,450 807,442 795,444"/>
+  <text x="820" y="410" class="relation-label">crea</text>
+
+  <!-- HomeController visualizza Utente -->
+  <path class="relation" d="M 870 570 L 800 570"/>
+  <polygon class="arrow" points="800,570 810,565 810,575"/>
+  <text x="820" y="560" class="relation-label">visualizza</text>
+
+  <!-- Request contiene dati Utente -->
+  <path class="relation-dashed" d="M 440 800 L 700 680"/>
+  <polygon class="arrow" points="700,680 691,686 697,676"/>
+  <text x="550" y="730" class="relation-label">contiene dati</text>
+
+  <!-- Response contiene Utente -->
+  <path class="relation" d="M 690 800 L 690 680"/>
+  <polygon class="arrow" points="690,680 685,690 695,690"/>
+  <text x="700" y="740" class="relation-label">contiene</text>
+
+  <!-- NetworkClient invia Request -->
+  <path class="relation-dashed" d="M 870 870 L 530 870"/>
+  <polygon class="arrow" points="530,870 540,865 540,875"/>
+  <text x="680" y="860" class="relation-label">invia</text>
+
+  <!-- NetworkClient riceve Response -->
+  <path class="relation-dashed" d="M 870 900 L 780 900"/>
+  <polygon class="arrow" points="870,900 860,895 860,905"/>
+  <text x="810" y="890" class="relation-label">riceve</text>
+
+  <!-- ClientHandler usa IUtenteDAO -->
+  <path class="relation-dashed" d="M 150 650 L 165 280"/>
+  <polygon class="arrow" points="165,280 160,290 170,290"/>
+  <text x="170" y="460" class="relation-label">usa</text>
+
+  <!-- ClientHandler elabora Utente -->
+  <path class="relation-dashed" d="M 250 710 L 600 540"/>
+  <polygon class="arrow" points="600,540 591,545 597,535"/>
+  <text x="400" y="620" class="relation-label">elabora</text>
+
+</svg>
