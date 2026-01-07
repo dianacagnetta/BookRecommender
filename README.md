@@ -34,6 +34,7 @@ il modulo client può instaurare una connessione verso il server, consentendo al
 accedere alle funzionalità offerte dall’applicazione. 
 Per i passaggi successivi fare riferimento al manuale utente.
 
+
 NOTA FINALE
 assicurarsi sempre che il server sia avviato prima di avviare il client.
 
