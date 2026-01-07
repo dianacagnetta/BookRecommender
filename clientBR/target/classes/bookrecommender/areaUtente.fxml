@@ -1,0 +1,11 @@
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.bookrecommender.ui.controller.AreaUtenteController"
+      spacing="15" padding="20">
+
+    <Label text="Area utente" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <Button text="Le mie librerie" onAction="#apriLibrerie"/>
+    <Button text="Logout" onAction="#logout"/>
+
+</VBox>
