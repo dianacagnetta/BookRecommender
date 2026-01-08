@@ -79,7 +79,10 @@ public class ConsigliController {
                 
                 Response res = client.send(req);
                 if (!res.ok) {
-                    throw new Exception("Errore durante il salvataggio del consiglio per: " + l.getTitolo());
+                    // Mostra il messaggio di errore dal server senza lanciare eccezione
+                    new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.ERROR, 
+                        res.message).showAndWait();
+                    return;
                 }
             }
 
@@ -88,7 +91,6 @@ public class ConsigliController {
             chiudi();
             
         } catch (Exception e) {
-            e.printStackTrace();
             new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.ERROR, 
                 "Errore: " + e.getMessage()).showAndWait();
         }
