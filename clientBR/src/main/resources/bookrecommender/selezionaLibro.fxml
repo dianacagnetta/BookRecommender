@@ -15,7 +15,10 @@
 
     <Label text="Seleziona un libro" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
 
-    <TextField fx:id="txtFiltro" promptText="Filtra per titolo..."/>
+    <HBox spacing="10">
+        <TextField fx:id="txtFiltro" promptText="Filtra per titolo..." HBox.hgrow="ALWAYS"/>
+        <Button text="Cerca" onAction="#cercaLibri" prefWidth="80"/>
+    </HBox>
 
     <ListView fx:id="listaLibri" prefWidth="420" prefHeight="300"/>
 
