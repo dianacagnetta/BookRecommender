@@ -142,7 +142,6 @@ case "REMOVE_BOOK_FROM_LIBRERIA":
                     }
                 } catch (Exception e) {
                     res = new Response(false, "Errore Server: " + e.getMessage());
-                    e.printStackTrace();
                 }
                 out.println(gson.toJson(res)); //
             }
