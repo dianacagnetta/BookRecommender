@@ -25,11 +25,16 @@ public class ConsigliDAOImpl implements IConsigliDAO {
     /**
      * Aggiunge un suggerimento di lettura al database.
      * Effettua prima una ricerca per convertire lo 'userid' (stringa) nell'ID numerico interno.
+     * LIMITE: Un utente può consigliare massimo 3 libri per ogni libro.
      */
     @Override
     public void addConsiglio(String userId, int libroId, int suggeritoId) throws Exception {
         // Query per recuperare l'ID numerico dell'utente
         String sqlUser = "SELECT id FROM br.UtentiRegistrati WHERE userid = ?";
+        // Query per contare i consigli già inseriti dall'utente per questo libro
+        String sqlCount = "SELECT COUNT(*) as conteggio FROM br.ConsigliLibri WHERE utente_id = ? AND libro_id = ?";
+        // Query per recuperare il titolo del libro target
+        String sqlTitolo = "SELECT titolo FROM br.Libri WHERE id = ?";
         // Query per inserire l'associazione del consiglio
         String sqlInsert = "INSERT INTO br.ConsigliLibri(utente_id, libro_id, suggerito_libro_id) VALUES (?, ?, ?)";
         
@@ -42,8 +47,32 @@ public class ConsigliDAOImpl implements IConsigliDAO {
                 if (rs.next()) uId = rs.getInt("id");
             }
             
-            // 2. Se l'utente esiste, inserisco il consiglio
+            // 2. Se l'utente esiste, verifico il limite di 3 consigli
             if (uId != -1) {
+                int conteggioConsigli = 0;
+                try (PreparedStatement psCount = conn.prepareStatement(sqlCount)) {
+                    psCount.setInt(1, uId);
+                    psCount.setInt(2, libroId);
+                    ResultSet rsCount = psCount.executeQuery();
+                    if (rsCount.next()) {
+                        conteggioConsigli = rsCount.getInt("conteggio");
+                    }
+                }
+                
+                // 3. Controllo: se ha già 3 consigli, blocco l'inserimento
+                if (conteggioConsigli >= 3) {
+                    String titoloLibro = "";
+                    try (PreparedStatement psTitolo = conn.prepareStatement(sqlTitolo)) {
+                        psTitolo.setInt(1, libroId);
+                        ResultSet rsTitolo = psTitolo.executeQuery();
+                        if (rsTitolo.next()) {
+                            titoloLibro = rsTitolo.getString("titolo");
+                        }
+                    }
+                    throw new Exception("Hai raggiunto il limite di 3 consigli per: " + titoloLibro);
+                }
+                
+                // 4. Se il limite non è stato raggiunto, inserisco il consiglio
                 try (PreparedStatement ps = conn.prepareStatement(sqlInsert)) {
                     ps.setInt(1, uId); 
                     ps.setInt(2, libroId); 
